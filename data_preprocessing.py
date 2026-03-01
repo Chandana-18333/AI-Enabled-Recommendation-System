@@ -38,7 +38,7 @@ def preprocess_data(file_path):
     data.to_csv("cleaned_data.csv", index=False)
     user_item_matrix.to_csv("user_item_matrix.csv")
 
-    print("Preprocessing Completed Successfully ✅")
+    print("Preprocessing Completed Successfully")
 
     return data, user_item_matrix
 
