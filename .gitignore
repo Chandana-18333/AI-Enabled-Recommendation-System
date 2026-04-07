@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+assets/external/
+.states
+*.db
+.web
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Secrets and Keys
+serviceAccountKey.json
+.env

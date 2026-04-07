@@ -1,0 +1,13 @@
+FILE agile_documents\Unit_Test_Plan.xlsx
+sheets ['UT']
+---
+sheet UT rows=7 cols=6
+Sl: No:,Test Case Name,Test Procedure,Condition to be tested,Expected Result,Actual Result
+1,API Chatbot Formatting,Ask the integrated Groq AI chatbot for the price of a specific product visible in the database.,Chatbot formats numerical price data into localized currency.,Chatbot responds with the correct product price explicitly formatted in Rupees (₹) along with a clickable link.,Chatbot responds accurately with ₹ formatting and a valid product URL.
+2,Dynamic Price Consistency,Navigate between the Home page and specific Product Detail pages.,The dynamic price generation logic based on product IDs.,The generated price remains consistent for the same product across different pages and sessions.,Prices generate consistently and match perfectly across all views.
+3,Star Rating Truncation,"View a product known to have a complex floating-point aggregated user rating (e.g., 4.33333).",UI formatting logic truncates trailing decimals.,"The product rating displays clearly, rounded to exactly one decimal place (e.g., 4.3).",UI truncates and displays the float accurately as a single decimal.
+4,Recommendation Engine (Cold Start),Register a completely new user account and navigate directly to the Home page.,The fallback logic when a user has zero browsing or purchase history.,"The recommendation system defaults to displaying a generalized list of ""Popular Products"" or ""Trending Items"".",System successfully loads the non-personalized trending fallback list.
+5,Wishlist State Update,Click the 'heart' icon to add a product to the user's wishlist from the Home page.,The Reflex frontend state management triggering a UI re-render.,"The wishlist icon immediately toggles to an active state, and the item counter increments without a page refresh.",State updates seamlessly and UI reflects the added item instantly.
+6,Home Page Product Feed,Open the Home page after login and verify product cards are rendered.,Product data is fetched correctly from the backend and state is updated.,"Visible product cards appear on the Home page with accurate names, prices, and images.",Visible product cards appear correctly and can be interacted with.
+7,Recommendation Load and Sync,Trigger a recommendation refresh and check the displayed items on the Home page.,Recommendation engine returns results for the current dataset and user context.,Recommendation panel displays relevant product suggestions without errors.,Recommendations display successfully and remain stable after reloads.
+

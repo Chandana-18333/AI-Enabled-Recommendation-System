@@ -1,0 +1,47 @@
+FILE agile_documents\Agile.xls
+sheets ['Product Backlog', 'Sprint Backlog', 'Stand up Meeting', 'Retrospection']
+---
+sheet Product Backlog rows=6 cols=8
+Planned Sprint,Actual Sprint,US ID,User Story Description,MOSCOW,Dependency,Assignee,Status
+Sprint 1,Sprint 1,US-01,"As a user, I want to view personalized product recommendations",MUST HAVE,,Aravindh S,3- Completed
+Sprint 2,Sprint 2,US-02,"As a user, I want recommendations based on my past purchases and ratings",MUST HAVE,US-01,Aravindh S,3- Completed
+Sprint 3,Sprint 3,US-03,"As a user, I want to see similar product suggestions",MUST HAVE,US-02,Aravindh S,3- Completed
+Sprint 4,Sprint 4,US-04,"As a user, I want popular product recommendations when no history exists",SHOULD HAVE,US-03,Aravindh S,3- Completed
+Sprint 5,Sprint 5,US-05,"As a user, I want accurate and relevant recommendations ",MUST HAVE,US-04,Aravindh S,3- Completed
+Sprint 6,Sprint 6,US-06,"As a user, I want the recommendation list to refresh automatically after any data update.",MUST HAVE,US-05,Aravindh S,1- In Progress
+
+---
+sheet Sprint Backlog rows=68 cols=23
+NOTES:  Task sizing should be between 0.5 to 12 hours,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed: 19,Unnamed: 20,Unnamed: 21,Unnamed: 22
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,, ,,,,,,,,,,,,,,,,,,,,
+,, ,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,, ,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,, ,,,,,,,,,,,,,,,,,,,,
+
+---
+sheet Stand up Meeting rows=6 cols=4
+Sprint ,Day,Impediments,Action Taken
+Sprint 1,Day 1,,Collected user interaction and product data and reviewed dataset structure
+Sprint 1,Day 2,Missing values and inconsistent user-product interaction data,"Performed data cleaning, handling missing values and normalizing dataset"
+Sprint 1,Day 3,Difficulty in selecting an appropriate recommendation approach,Analyzed collaborative and content-based filtering and finalized both approaches.
+Sprint 1,Day 4,Cold-start issue for new users and products,Implemented fallback logic using popular products
+Sprint 1,Day 5,Low initial accuracy of recommendation results,Tuned model parameters and evaluated performance using precision and recall metrics
+Sprint 1,Day 6,Verifying backend-to-frontend product mapping after recent fixes,Confirmed product card display and fixed mapping issues in the dataset loader.
+
+---
+sheet Retrospection rows=7 cols=9
+SL #,Sprint #,Sprint start date,Sprint end date,Team member name ,Start Doing,Stop Doing ,Continue Doing ,Action taken
+1,1,2026-02-02,2026-02-16,Aravindh S,"Project planning, UI wireframing, and early data profiling",Jumping into coding without understanding dataset structures,Defining product requirements clearly,Followed a structured workflow for data preprocessing and established project architecture
+2,2,2026-02-17,2026-02-18,Aravindh S,"Initialize Reflex frontend, setting up routing, pages, and components",Ignoring folder structures and mixing frontend/backend logic,Isolating reusable components like Navbars and Footers,"Set up the foundation UI (Home, Cart, Profile, etc.)"
+3,3,2026-02-19,2026-02-28,Aravindh S,Implement Firebase backend authentication and database connections,Hardcoding credentials instead of using environment variables,Regularly reviewing frontend component styling,Integrated user login and signup functionality securely
+4,4,29-02-2026,2026-03-10,Aravindh S,Build baseline recommender engine (Content-based & Collaborative Filtering),Manually checking recommendations without an automated pipeline,Preprocessing CSV datasets via Pandas without warnings,Developed models to personalize the product feed
+5,5,2026-03-11,2026-03-22,Aravindh S,Connect the Recommender API to Reflex State (ProductsState) dynamically,Storing massive user states redundantly in the frontend,Handling data fetching efficiently using async methods,Replaced static placeholders with dynamic AI-curated products
+6,6,2026-03-23,2026-03-28,Aravindh S,Implement end-to-end shopping Cart and Order History flows,Letting bad test data reside in the DB,Testing the full user journey continuously,Built cart logic and Razorpay/Redirect simulated payment flows
+7,7,2026-03-29,2026-04-05,Aravindh S,Reviewing recommendation state updates and backend document accuracy,Working on UI issues without validating data pipelines,Using concise defect and test documentation for each fix,Updated sprint artifacts and confirmed product feed rendering on the home page.
+

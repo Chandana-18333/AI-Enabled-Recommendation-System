@@ -1,0 +1,58 @@
+FILE agile_documents\Agile.xls exists True
+sheets ['Product Backlog', 'Sprint Backlog', 'Stand up Meeting', 'Retrospection']
+---
+sheet Product Backlog rows=5 cols=8
+cols=['Planned Sprint', 'Actual Sprint', 'US ID', 'User Story Description', 'MOSCOW', 'Dependency', 'Assignee', 'Status']
+Planned Sprint,Actual Sprint,US ID,User Story Description,MOSCOW,Dependency,Assignee,Status
+Sprint 1,Sprint 1,US-01,"As a user, I want to view personalized product recommendations",MUST HAVE,,Your name,3- Completed
+Sprint 2,Sprint 2,US-02,"As a user, I want recommendations based on my past purchases and ratings",MUST HAVE,US-01,Your name,3- Completed
+Sprint 3,Sprint 3,US-03,"As a user, I want to see similar product suggestions",MUST HAVE,US-02,Your name,3- Completed
+Sprint 4,Sprint 4,US-04,"As a user, I want popular product recommendations when no history exists",SHOULD HAVE,US-03,Your name,3- Completed
+Sprint 5,Sprint 5,US-05,"As a user, I want accurate and relevant recommendations ",MUST HAVE,US-04,Your name,3- Completed
+
+---
+sheet Sprint Backlog rows=68 cols=23
+cols=['NOTES:  Task sizing should be between 0.5 to 12 hours', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21', 'Unnamed: 22']
+NOTES:  Task sizing should be between 0.5 to 12 hours,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed: 19,Unnamed: 20,Unnamed: 21,Unnamed: 22
+US ID,Task ID,Task Description,Task Start Date,Task Completion Date,Team Member,Activity,Status,Original Estimate Effort (In Hours),Day 1,Day 2,Day 3,Day 4,Day 5,Day 6,Day 7,Day 8,Day 9,Day 10,Day 11,Day 12,Day 13,Day 14
+,,,,,,,,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0
+SPRINT  1  BACKLOG,,,,,,,,,,,,,,,,,,,,,,
+US-01,T-01,Dataset collection and preprocessing,2025-12-04 00:00:00,2025-12-05 00:00:00,Your Name,Build,3- Completed,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+US-01,T-02, Handle cold-start problem using popularity-based logic ,2025-12-15 00:00:00,2025-12-16 00:00:00,Your Name,Design,3- Completed,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+US-01,T-03,Evaluate recommendation accuracy using precision and recall,2025-12-29 00:00:00,2025-12-30 00:00:00,Your Name,Unit Test,3- Completed,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+
+---
+sheet Stand up Meeting rows=5 cols=4
+cols=['Sprint ', 'Day', 'Impediments', 'Action Taken']
+Sprint ,Day,Impediments,Action Taken
+Sprint 1,Day 1,,Collected user interaction and product data and reviewed dataset structure
+Sprint 1,Day 2,Missing values and inconsistent user-product interaction data,"Performed data cleaning, handling missing values and normalizing dataset"
+Sprint 1,Day 3,Difficulty in selecting an appropriate recommendation approach,Analyzed collaborative and content-based filtering and finalized both approaches.
+Sprint 1,Day 4,Cold-start issue for new users and products,Implemented fallback logic using popular products
+Sprint 1,Day 5,Low initial accuracy of recommendation results,Tuned model parameters and evaluated performance using precision and recall metrics
+
+---
+sheet Retrospection rows=6 cols=9
+cols=['SL #', 'Sprint #', 'Sprint start date', 'Sprint end date', 'Team member name ', 'Start Doing', 'Stop Doing ', 'Continue Doing ', 'Action taken']
+SL #,Sprint #,Sprint start date,Sprint end date,Team member name ,Start Doing,Stop Doing ,Continue Doing ,Action taken
+1,1,2026-02-02 00:00:00,2026-02-16,Aravindh S,"Project planning, UI wireframing, and early data profiling",Jumping into coding without understanding dataset structures,Defining product requirements clearly,Followed a structured workflow for data preprocessing and established project architecture
+2,2,2026-02-17 00:00:00,2026-02-18,Aravindh S,"Initialize Reflex frontend, setting up routing, pages, and components",Ignoring folder structures and mixing frontend/backend logic,Isolating reusable components like Navbars and Footers,"Set up the foundation UI (Home, Cart, Profile, etc.)"
+3,3,2026-02-19 00:00:00,2026-02-28,Aravindh S,Implement Firebase backend authentication and database connections,Hardcoding credentials instead of using environment variables,Regularly reviewing frontend component styling,Integrated user login and signup functionality securely
+4,4,29-02-2026,2026-03-10,Aravindh S,Build baseline recommender engine (Content-based & Collaborative Filtering),Manually checking recommendations without an automated pipeline,Preprocessing CSV datasets via Pandas without warnings,Developed models to personalize the product feed
+5,5,2026-03-11 00:00:00,2026-03-22,Aravindh S,Connect the Recommender API to Reflex State (ProductsState) dynamically,Storing massive user states redundantly in the frontend,Handling data fetching efficiently using async methods,Replaced static placeholders with dynamic AI-curated products
+6,6,2026-03-23 00:00:00,2026-03-28,Aravindh S,Implement end-to-end shopping Cart and Order History flows,Letting bad test data reside in the DB,Testing the full user journey continuously,Built cart logic and Razorpay/Redirect simulated payment flows
+

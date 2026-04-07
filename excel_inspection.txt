@@ -1,0 +1,34 @@
+FILE agile_documents/Agile.xls exists True
+ sheets ['Product Backlog', 'Sprint Backlog', 'Stand up Meeting', 'Retrospection']
+ sheet Product Backlog rows=5 cols=8
+ cols=['Planned Sprint', 'Actual Sprint', 'US ID', 'User Story Description', 'MOSCOW', 'Dependency', 'Assignee', 'Status']
+ first={'Planned Sprint': 'Sprint 1', 'Actual Sprint': 'Sprint 1', 'US ID': 'US-01', 'User Story Description': 'As a user, I want to view personalized product recommendations', 'MOSCOW': 'MUST HAVE', 'Dependency': nan, 'Assignee': 'Your name', 'Status': '3- Completed'}
+---
+ sheet Sprint Backlog rows=68 cols=23
+ cols=['NOTES:  Task sizing should be between 0.5 to 12 hours', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21', 'Unnamed: 22']
+ first={'NOTES:  Task sizing should be between 0.5 to 12 hours': 'US ID', 'Unnamed: 1': 'Task ID', 'Unnamed: 2': 'Task Description', 'Unnamed: 3': 'Task Start Date', 'Unnamed: 4': 'Task Completion Date', 'Unnamed: 5': 'Team Member', 'Unnamed: 6': 'Activity', 'Unnamed: 7': 'Status', 'Unnamed: 8': 'Original Estimate Effort (In Hours)', 'Unnamed: 9': 'Day 1', 'Unnamed: 10': 'Day 2', 'Unnamed: 11': 'Day 3', 'Unnamed: 12': 'Day 4', 'Unnamed: 13': 'Day 5', 'Unnamed: 14': 'Day 6', 'Unnamed: 15': 'Day 7', 'Unnamed: 16': 'Day 8', 'Unnamed: 17': 'Day 9', 'Unnamed: 18': 'Day 10', 'Unnamed: 19': 'Day 11', 'Unnamed: 20': 'Day 12', 'Unnamed: 21': 'Day 13', 'Unnamed: 22': 'Day 14'}
+---
+ sheet Stand up Meeting rows=5 cols=4
+ cols=['Sprint ', 'Day', 'Impediments', 'Action Taken']
+ first={'Sprint ': 'Sprint 1', 'Day': 'Day 1', 'Impediments': nan, 'Action Taken': 'Collected user interaction and product data and reviewed dataset structure'}
+---
+ sheet Retrospection rows=6 cols=9
+ cols=['SL #', 'Sprint #', 'Sprint start date', 'Sprint end date', 'Team member name ', 'Start Doing', 'Stop Doing ', 'Continue Doing ', 'Action taken']
+ first={'SL #': 1, 'Sprint #': 1, 'Sprint start date': datetime.datetime(2026, 2, 2, 0, 0), 'Sprint end date': Timestamp('2026-02-16 00:00:00'), 'Team member name ': 'Aravindh S', 'Start Doing': 'Project planning, UI wireframing, and early data profiling', 'Stop Doing ': 'Jumping into coding without understanding dataset structures', 'Continue Doing ': 'Defining product requirements clearly', 'Action taken': 'Followed a structured workflow for data preprocessing and established project architecture'}
+---
+FILE agile_documents/Defect_Tracker.xlsx exists True
+ sheets ['Defects', 'Sheet2']
+ sheet Defects rows=5 cols=11
+ cols=['Sl No', 'Submitted By', 'Submitted Date', 'Description', 'Detected Sprint', 'Assigned To', 'Type Of Defect', 'Action Taken', 'Action Taken Date', 'Status(Open/Closed)', 'Remarks']
+ first={'Sl No': 1, 'Submitted By': 'Aravindh S', 'Submitted Date': Timestamp('2026-02-10 00:00:00'), 'Description': 'Product images failing to load due to piped multiple URL strings in the database', 'Detected Sprint': 'Milestone 2 (Weeks 3-4)', 'Assigned To': 'Self', 'Type Of Defect': 'Logical', 'Action Taken': 'Implemented string parsing logic to extract the first valid URL from the piped string', 'Action Taken Date': Timestamp('2026-02-12 00:00:00'), 'Status(Open/Closed)': 'Closed', 'Remarks': 'UI now successfully renders primary product thumbnails'}
+---
+ sheet Sheet2 rows=4 cols=1
+ cols=['Logical']
+ first={'Logical': 'User Interface'}
+---
+FILE agile_documents/Unit_Test_Plan.xlsx exists True
+ sheets ['UT']
+ sheet UT rows=5 cols=6
+ cols=['Sl: No:', 'Test Case Name', 'Test Procedure', 'Condition to be tested', 'Expected Result', 'Actual Result']
+ first={'Sl: No:': 1, 'Test Case Name': 'API Chatbot Formatting', 'Test Procedure': 'Ask the integrated Groq AI chatbot for the price of a specific product visible in the database.', 'Condition to be tested': 'Chatbot formats numerical price data into localized currency.', 'Expected Result': 'Chatbot responds with the correct product price explicitly formatted in Rupees (₹) along with a clickable link.', 'Actual Result': 'Chatbot responds accurately with ₹ formatting and a valid product URL.'}
+---

@@ -1,0 +1,21 @@
+FILE agile_documents\Defect_Tracker.xlsx exists True
+sheets ['Defects', 'Sheet2']
+---
+sheet Defects rows=5 cols=11
+cols=['Sl No', 'Submitted By', 'Submitted Date', 'Description', 'Detected Sprint', 'Assigned To', 'Type Of Defect', 'Action Taken', 'Action Taken Date', 'Status(Open/Closed)', 'Remarks']
+Sl No,Submitted By,Submitted Date,Description,Detected Sprint,Assigned To,Type Of Defect,Action Taken,Action Taken Date,Status(Open/Closed),Remarks
+1,Aravindh S,2026-02-10,Product images failing to load due to piped multiple URL strings in the database,Milestone 2 (Weeks 3-4),Self,Logical,Implemented string parsing logic to extract the first valid URL from the piped string,2026-02-12,Closed,UI now successfully renders primary product thumbnails
+2,Aravindh S,2026-02-24,"SettingWithCopyWarning thrown during Pandas user-item matrix generation, causing state instability",Milestone 3 (Weeks 5-6),Self,Backend,Refactored dataframe manipulation using .loc to ensure safe data mutation,2026-02-25,Closed,Data pipeline runtime optimized and warnings resolved
+3,Aravindh S,2026-03-05,"Razorpay SDK integration fails to initialize, blocking the checkout flow",Milestone 3 (Weeks 5-6),Self,Integration,Replaced broken SDK call with a reliable link-based payment redirect,2026-03-08,Closed,Payment flow fully functional with correct order totals
+4,Aravindh S,2026-03-15,AI Chatbot outputs raw numeric prices instead of properly formatted Rupee currency,Milestone 4 (Weeks 7-8),Self,UI/UX,Updated chatbot system prompt and frontend logic to enforce standard currency formatting,2026-03-16,Closed,Chatbot now accurately reflects localized currency (₹)
+5,Aravindh S,2026-03-20,"Star ratings on product detail pages show excessive trailing decimals (e.g., 4.333333)",Milestone 4 (Weeks 7-8),Self,UI/UX,Added formatting logic in Reflex state to round star ratings to one decimal place,2026-03-20,Closed,Enhanced visual consistency across product grids
+
+---
+sheet Sheet2 rows=4 cols=1
+cols=['Logical']
+Logical
+User Interface
+Maintainability
+Standards
+Others
+
